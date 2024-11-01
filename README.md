@@ -51,8 +51,10 @@ Lista de variables importantes para configurar:
 
 - **`SECRET_KEY`**: Clave secreta utilizada para encriptar datos sensibles. Genera una clave segura y única para cada entorno.
 - **`DEBUG`**: Activa el modo de depuración (solo para entornos de desarrollo). Valor recomendado en producción: `False`.
+- **SENTRY_DSN**: Clave de configuración de Sentry. Esta variable es opcional y solo se utiliza en entornos de producción, donde se envía información de errores a un servidor de seguimiento.
 - **`ALLOWED_HOSTS`**: Lista de hosts permitidos para el sitio. Por defecto incluye `0.0.0.0` y `deploywithpython.local`.
 - **`DATABASE_URL`**: URL de conexión a la base de datos en formato de cadena de conexión. El valor predeterminado es `sqlite:///db.sqlite3`.
+
 
 ## Ejemplo de Configuración `.env`
 

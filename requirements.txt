@@ -3,3 +3,6 @@ django-environ==0.11.2
 
 # PostgreSQL Dependencies
 psycopg2-binary==2.9.10
+
+# Sentry Dependencies
+sentry-sdk==2.17.0

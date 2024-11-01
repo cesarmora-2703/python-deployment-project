@@ -63,6 +63,13 @@ ALLOWED_HOSTS='0.0.0.0, deploywithpython.local'
 DATABASE_URL='sqlite:///db.sqlite3'
 ```
 
+
+## Calculator
+
+El proyecto incluye una aplicación de ejemplo llamada **Calculator** que se puede acceder en `http://127.0.0.1:8000/calculator/`. Esta aplicación es una calculadora de división y permite a los estudiantes realizar cálculos de división con dos números.
+
+La url `/calculator/divide/` recibe dos parámetros: `x` y `y`, que representan los numeradores y denominadores, respectivamente. El resultado de la división se muestra en la pantalla de resultado.
+
 ## Despliegue en Producción
 
 Para desplegar la aplicación en producción, asegúrate de ajustar las variables de entorno correspondientes, especialmente `DEBUG=False`, y configura un servidor de bases de datos adecuado.

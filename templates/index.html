@@ -4,87 +4,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deploy with Python - Curso Platzi</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Curso de Despliegue de Aplicaciones Python | Deploy With Python en Platzi</title>
+
+  <!-- Meta Description para SEO -->
+  <meta name="description"
+    content="Aprende a desplegar aplicaciones Python de forma rápida y eficiente con el profesor Luis Martínez en Platzi. Domina los frameworks de Python como Django, Flask y FastAPI y convierte tu conocimiento en aplicaciones listas para producción.">
+
+  <!-- Palabras clave -->
+  <meta name="keywords"
+    content="Curso Python, Despliegue de aplicaciones, Deploy With Python, Platzi, Django, Flask, FastAPI, Desarrollo Web, Luis Martínez">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.deploywithpython.com">
+
+  <!-- Open Graph para redes sociales -->
+  <meta property="og:title" content="Curso de Despliegue de Aplicaciones Python | Deploy With Python en Platzi">
+  <meta property="og:description"
+    content="Aprende a desplegar aplicaciones Python de forma rápida y eficiente con el profesor Luis Martínez en Platzi. Domina frameworks populares y despliega con confianza.">
+  <meta property="og:image" content="https://www.deploywithpython.com/images/course-banner.png">
+  <meta property="og:url" content="https://www.deploywithpython.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Deploy With Python">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Curso de Despliegue de Aplicaciones Python | Deploy With Python en Platzi">
+  <meta name="twitter:description"
+    content="Aprende a desplegar aplicaciones Python de forma rápida y eficiente con el profesor Luis Martínez en Platzi. Domina frameworks como Django, Flask y FastAPI.">
+  <meta name="twitter:image" content="https://www.deploywithpython.com/images/course-banner.png">
+  <meta name="twitter:site" content="@Platzi">
+
+  <!-- Fuente de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://www.deploywithpython.com/favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+    }
+
+    /* Estilos Minimalistas */
+    .bg-gray-light {
+      background-color: #F5F5F5;
+    }
+
+    .bg-gray-dark {
+      background-color: #333;
+    }
+
+    .text-gray-dark {
+      color: #333;
+    }
+
+    .text-gray-medium {
+      color: #666;
+    }
+
+    .bg-accent {
+      background-color: #16A34A;
+      /* green-600 de Tailwind */
+    }
+
+    .text-accent {
+      color: #16A34A;
+      /* green-600 de Tailwind */
+    }
+  </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-light text-gray-dark">
 
   <!-- Header -->
-  <header class="bg-white shadow-md py-4">
+  <header class="bg-gray-light py-4">
     <div class="container mx-auto px-4 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold text-green-600">DeployWithPython</a>
-      <nav>
-        <a href="#features" class="text-gray-600 hover:text-green-600 mx-4">Beneficios</a>
-        <a href="#about" class="text-gray-600 hover:text-green-600 mx-4">Sobre el Curso</a>
-        <a href="#contact" class="text-gray-600 hover:text-green-600 mx-4">Contacto</a>
+      <a href="#" class="text-2xl font-bold text-gray-dark">Deploy With Python</a>
+      <nav class="hidden md:flex">
+        <a href="#features" class="text-gray-dark hover:text-accent mx-4">Beneficios</a>
+        <a href="#about" class="text-gray-dark hover:text-accent mx-4">Sobre el Curso</a>
+        <a href="#frameworks" class="text-gray-dark hover:text-accent mx-4">Frameworks</a>
       </nav>
-      <a href="#signup" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Inscribirse</a>
+      <a href="#signup"
+        class="bg-accent text-white px-4 py-2 rounded hover:bg-gray-dark md:inline-block hidden">Inscribirse</a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-green-50 py-20">
-    <div class="container mx-auto px-4 text-center w-3/2">
-      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 ">Aprende a Desplegar Aplicaciones con Python en
-        Platzi</h1>
-      <p class="mt-4 text-lg text-gray-600">Domina el despliegue de aplicaciones Python en este curso impartido
-        por Luis Martínez.</p>
+  <section class="py-20 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-dark">Curso de Despliegue de Aplicaciones con Python</h1>
+      <p class="mt-4 text-lg text-gray-medium">Conviértete en un experto en despliegue de aplicaciones Python con
+        nuestro curso de Platzi impartido por el profesor Luis Martínez.</p>
+      <p class="mt-2 text-gray-medium">Este es el sitio desplegado como ejemplo para el curso en Platzi</p>
       <a href="#signup"
-        class="mt-8 inline-block bg-green-600 text-white text-lg font-medium px-6 py-3 rounded hover:bg-green-700">
+        class="mt-8 inline-block bg-accent text-white text-lg font-medium px-6 py-3 rounded hover:bg-gray-dark">
         Inscribirme Ahora
       </a>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">Beneficios de Aprender con DeployWithPython
-      </h2>
-      <div class="grid md:grid-cols-3 gap-8">
+  <section id="features" class="py-16 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-dark mb-10">Beneficios del Curso</h2>
+      <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div class="bg-white shadow-lg p-6 rounded-lg text-center">
-          <h3 class="text-2xl font-semibold text-green-600">Enfoque Práctico</h3>
-          <p class="mt-4 text-gray-600">Aprende paso a paso con proyectos prácticos aplicados al mundo real.
-          </p>
+          <h3 class="text-2xl font-semibold text-gray-dark mt-4">Metodología Práctica</h3>
+          <p class="mt-4 text-gray-medium">Cada módulo incluye ejercicios prácticos aplicados al mundo real para una
+            experiencia de aprendizaje interactiva.</p>
         </div>
         <div class="bg-white shadow-lg p-6 rounded-lg text-center">
-          <h3 class="text-2xl font-semibold text-green-600">Para Todos los Niveles</h3>
-          <p class="mt-4 text-gray-600">Desde principiante hasta avanzado, el curso cubre todos los aspectos
-            del despliegue en Python.</p>
+          <h3 class="text-2xl font-semibold text-gray-dark mt-4">Para Todos los Niveles</h3>
+          <p class="mt-4 text-gray-medium">Ideal para estudiantes de todos los niveles, cubriendo desde lo básico hasta
+            despliegues avanzados de Python.</p>
         </div>
         <div class="bg-white shadow-lg p-6 rounded-lg text-center">
-          <h3 class="text-2xl font-semibold text-green-600">Soporte del Profesor</h3>
-          <p class="mt-4 text-gray-600">Con el profesor Luis Martínez y la comunidad de Platzi, siempre
-            tendrás apoyo.</p>
+          <h3 class="text-2xl font-semibold text-gray-dark mt-4">Soporte del Profesor</h3>
+          <p class="mt-4 text-gray-medium">Recibe orientación y soporte continuo de nuestro experto, el profesor Luis
+            Martínez, junto con la comunidad de Platzi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frameworks Section -->
+  <section id="frameworks" class="py-16 bg-white px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-gray-dark mb-10">Frameworks de Python para Despliegue</h2>
+      <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center">
+        <div class="shadow-lg p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold text-gray-dark">Django</h3>
+          <p class="mt-4 text-gray-medium">Un framework completo que permite desarrollar aplicaciones web seguras y
+            escalables de manera rápida.</p>
+        </div>
+        <div class="shadow-lg p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold text-gray-dark">Flask</h3>
+          <p class="mt-4 text-gray-medium">Framework minimalista ideal para aplicaciones pequeñas y microservicios con
+            flexibilidad y control.</p>
+        </div>
+        <div class="shadow-lg p-6 rounded-lg">
+          <h3 class="text-2xl font-semibold text-gray-dark">FastAPI</h3>
+          <p class="mt-4 text-gray-medium">Optimizado para APIs rápidas y eficientes, es ideal para aplicaciones
+            modernas de alto rendimiento.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-gray-900">Sobre el Curso en Platzi</h2>
-      <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Este curso está diseñado para que domines el despliegue de
-        aplicaciones con Python, guiado por el experto Luis Martínez, quien te llevará de la teoría a la
-        práctica en cada lección.</p>
+  <section id="about" class="py-16 bg-gray-light px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-gray-dark">Acerca del Curso en Platzi</h2>
+      <p class="mt-4 text-gray-medium max-w-2xl mx-auto">Este curso avanzado de despliegue de aplicaciones Python te
+        permitirá aprender a tu ritmo, cubriendo desde los fundamentos hasta técnicas avanzadas para desplegar tus
+        aplicaciones en entornos productivos.</p>
+      <a href="https://platzi.com/buscar/?search=luis%20martinez&objecttype=course"
+        class="mt-8 inline-block bg-accent text-white text-lg font-medium px-6 py-3 rounded hover:bg-gray-dark"
+        target="_blank">
+        Ver Curso en Platzi
+      </a>
     </div>
   </section>
 
   <!-- Call to Action -->
-  <section id="signup" class="py-20 bg-green-600 text-white text-center">
-    <h2 class="text-3xl font-bold">¿Listo para empezar?</h2>
-    <p class="mt-4">Únete a Platzi y empieza a desplegar aplicaciones Python con confianza.</p>
-    <a href="#" class="mt-8 inline-block bg-white text-green-600 font-medium px-6 py-3 rounded hover:bg-gray-100">
+  <section id="signup" class="py-20 bg-gray-dark text-white text-center">
+    <h2 class="text-3xl font-bold">¿Listo para Desplegar Aplicaciones Python?</h2>
+    <p class="mt-4">Empieza a desplegar aplicaciones Python con confianza. Únete a nuestro curso en Platzi.</p>
+    <a href="https://platzi.com/buscar/?search=luis%20martinez&objecttype=course"
+      class="mt-8 inline-block bg-accent text-white font-medium px-6 py-3 rounded hover:bg-gray-light" target="_blank">
       Inscribirme en Platzi
     </a>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-6">
+  <footer class="bg-gray-light text-gray-medium py-6">
     <div class="container mx-auto px-4 text-center">
-      <p>&copy; 2023 DeployWithPython - Curso de Platzi con Luis Martínez. Todos los derechos reservados.</p>
+      <p>&copy; 2023 Deploy With Python - Curso de Platzi con Luis Martínez. Todos los derechos reservados.</p>
     </div>
   </footer>
 

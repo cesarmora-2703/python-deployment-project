@@ -55,6 +55,14 @@ Lista de variables importantes para configurar:
 - **`ALLOWED_HOSTS`**: Lista de hosts permitidos para el sitio. Por defecto incluye `0.0.0.0` y `deploywithpython.local`.
 - **`DATABASE_URL`**: URL de conexión a la base de datos en formato de cadena de conexión. El valor predeterminado es `sqlite:///db.sqlite3`.
 
+### Configuración de Almacenamiento en S3
+
+Para configurar el almacenamiento en S3, debes proporcionar las siguientes variables de entorno:
+
+- **`USE_S3_STORAGE`**: Valor booleano para activar el almacenamiento en S3.
+- **`AWS_ACCESS_KEY_ID`**: Clave de acceso de AWS.
+- **`AWS_SECRET_ACCESS_KEY`**: Clave de secreto de AWS.
+- **`AWS_STORAGE_BUCKET_NAME`**: Nombre del bucket de S3.
 
 ## Ejemplo de Configuración `.env`
 
